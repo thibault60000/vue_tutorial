@@ -13,6 +13,7 @@
 <script>
 import Vue from 'vue'
 import VueResource from 'vue-resource'
+import bus from '../main.js'
 Vue.use(VueResource)
 
 export default {
@@ -26,8 +27,7 @@ export default {
   },
   methods: {
     selectCar (car) {
-      console.log(car)
-      this.$emit('selected', car)
+      bus.$emit('selected', car.id)
     }
   },
   computed: {

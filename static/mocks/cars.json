@@ -15,12 +15,12 @@
   ],
   "details": [
     {
-      "id": "1",
+      "id": 1,
       "immatriculation": "1881519",
       "km": "122500"
     },
     {
-      "id": "2",
+      "id": 2,
       "immatriculation": "1618650",
       "km": "13000"
     }
