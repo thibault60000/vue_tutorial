@@ -10,29 +10,14 @@
 </template>
 
 <script>
+
+// eslint-disable-next-line
 import Vue from 'vue'
-import VueResource from 'vue-resource'
-import bus from '../main.js'
-Vue.use(VueResource)
+import Vuex from 'vuex'
 
 export default {
-  data () {
-    return {
-      car: {}
-    }
-  },
-  http: {
-    root: 'http://localhost:3000'
-  },
-  created () {
-    bus.$on('selected', (selected) => {
-      this.$resource('details').get({id: selected}).then((response) => {
-        this.car = response.data[0]
-        console.log(response.data)
-      }, (response) => {
-        console.log('erreur', response)
-      })
-    })
+  computed: {
+    ...Vuex.mapGetters({car: 'selectedCar'})
   }
 }
 </script>
