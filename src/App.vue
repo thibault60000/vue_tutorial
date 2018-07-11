@@ -2,17 +2,17 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <Cars name='ford' model='fiesta' year='2008' />
+    <CarPage name='ford' model='fiesta' year='2008' />
   </div>
 </template>
 
 <script>
-import Cars from './components/Cars'
+import CarPage from './pages/CarPage'
 
 export default {
   name: 'App',
   components: {
-    Cars
+    CarPage
   }
 }
 </script>
@@ -26,4 +26,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>

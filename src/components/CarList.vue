@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="carList">
     <ul v-for='car in cars' :key=car.name>
       <li>{{ car.name }} </li>
       <li>{{ car.model }}</li>
       <li>{{ car.year }}</li>
+      <button @click='selectCar(car)'> Voir les détails </button>
     </ul>
-    <button @click='addCar'> Add car </button>
     <p> Nombre de voitures : {{ counter }}</p>
   </div>
 </template>
@@ -25,12 +25,9 @@ export default {
     root: 'http://localhost:3000'
   },
   methods: {
-    addCar () {
-      this.cars.push({
-        name: 'ford',
-        model: 'fiesta',
-        year: '2008'
-      })
+    selectCar (car) {
+      console.log(car)
+      this.$emit('selected', car)
     }
   },
   computed: {
@@ -52,3 +49,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  div.carList{
+    display: inline-block;
+    width: 40%;
+  }
+</style>
