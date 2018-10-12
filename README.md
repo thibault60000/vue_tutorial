@@ -1,21 +1,16 @@
-# vue_js_tutorial
+:octocat: Thibault Jeanpierre
+# VUE TUTORIAL
+Files for a Vue.js Tutorial
 
-> A Vue.js project
+_Learn to go from a chick_ :baby_chick: _to a sublime cock_ :chicken:
 
-## Build Setup
+No action is required 
+> HTML / CSS / JS
 
-``` bash
-# install dependencies
-npm install
+**My social networks**
+* [Twitter](https://twitter.com/ThibaultJP1)
+* [Github](https://github.com/thibault60000)
+* [Facebook](https://www.facebook.com/ThibaultJP60000) (leave in progress)
+* [LinkedIn](https://www.linkedin.com/in/thibault-jeanpierre-a9b40295/)
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+And my Website [here](https://thibault60000.github.io/thibaultjeanpierre--website/) (the new is under construction)
